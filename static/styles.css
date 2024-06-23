@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.toolbar {
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.tablinks {
+  display: flex;
+}
+
+.toolbar a {
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.toolbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.tabcontent {
+  display: none;
+  padding: 20px;
+}
+
+.tabcontent table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabcontent table, .tabcontent th, .tabcontent td {
+  border: 1px solid black;
+}
+
+.tabcontent th, .tabcontent td {
+  padding: 10px;
+  text-align: left;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.signout {
+  color: white;
+  padding: 14px 16px;
+  text-align: center;
+}

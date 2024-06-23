@@ -1,8 +1,8 @@
 from flask import Blueprint, render_template, request, redirect, url_for, flash
-from flask_login import current_user, login_required, login_user, logout_user
+from flask_login import login_required, login_user, logout_user
 
 from forms import StateForm, PositionForm, DepartmentForm, EmployeeForm, SearchEmployeeForm
-from .models import Employee, Position, Department, State, User
+from models import Employee, Position, Department, State, User
 from init_db import db
 
 main = Blueprint('main', __name__)
@@ -55,7 +55,7 @@ def create_employee():
         if form.position.data == -1 or form.department.data == -1 or form.state.data == -1:
             flash('Employee must have position, department, and state')
             return redirect(url_for('main.index'))
-        new_employee = Employee(name=form.name.data, position_id=form.position.data,
+        new_employee = Employee(name=form.name.data, address=form.address.data, position_id=form.position.data,
                                 department_id=form.department.data, state_id=form.state.data)
         db.session.add(new_employee)
         db.session.commit()

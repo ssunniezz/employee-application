@@ -150,6 +150,12 @@
         <a class="btn btn-primary" href="{{ url_for('main.create_state') }}">Create New State</a>
     </div>
     <table>
+    <thead>
+    <tr>
+        <th>State</th>
+        <th>Modify</th>
+    </tr>
+    </thead>
     <tbody>
       {% for state in states %}
       <tr>
@@ -166,12 +172,6 @@
       {% endfor %}
     </tbody>
     </table>
-    <thead>
-    <tr>
-        <th>State</th>
-        <th>Modify</th>
-    </tr>
-    </thead>
 </div>
 
 <!-- Flash Message Modal -->

@@ -12,6 +12,7 @@ base = declarative_base()
 
 
 class User(UserMixin, db.Model):
+    __tablename__ = 'user'
     __table_args__ = {'extend_existing': True}
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(50), unique=True, nullable=False)
@@ -28,6 +29,7 @@ class User(UserMixin, db.Model):
 
 
 class Position(base, db.Model):
+    __tablename__ = 'position'
     __table_args__ = {'extend_existing': True}
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(100), nullable=False, unique=True)
@@ -38,6 +40,7 @@ class Position(base, db.Model):
 
 
 class Department(base, db.Model):
+    __tablename__ = 'department'
     __table_args__ = {'extend_existing': True}
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(100), nullable=False, unique=True)
@@ -49,6 +52,7 @@ class Department(base, db.Model):
 
 
 class State(base, db.Model):
+
     __table_args__ = {'extend_existing': True}
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(100), nullable=False, unique=True)
@@ -58,12 +62,11 @@ class State(base, db.Model):
 
 
 class Employee(base, db.Model):
+    __tablename__ = 'employee'
     __table_args__ = {'extend_existing': True}
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(100), nullable=False)
     address = db.Column(db.String(200), nullable=True)
-    manager_id = db.Column(db.Integer, db.ForeignKey('employee.id'), nullable=True)
-    manager = db.relationship('Employee', remote_side=[id], backref=backref('subordinates'), lazy=True)
     image_file = db.Column(db.String(20), nullable=False, default='default.jpg')
     position_id = db.Column(db.Integer, db.ForeignKey('position.id'), nullable=False)
     position = db.relationship('Position', backref=backref('employees'), lazy=True)

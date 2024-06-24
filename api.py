@@ -1,5 +1,5 @@
 from flask import Blueprint, request
-from flask_restful import Api, Resource, reqparse, fields, marshal_with
+from flask_restful import fields, marshal_with
 
 from models import Employee, Position, Department
 from init_db import db

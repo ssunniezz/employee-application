@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd7ea6eb-af48-4169-b7d2-34f5d103003d" name="Changes" comment="fix import error">
+    <list default="true" id="bd7ea6eb-af48-4169-b7d2-34f5d103003d" name="Changes" comment="add Procfile">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +169,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719225864780</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add Procfile">
+      <option name="closed" value="true" />
+      <created>1719227349562</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1719227349562</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,10 +188,11 @@
     <MESSAGE value="implement rest api endpoints" />
     <MESSAGE value="generate requirements.txt" />
     <MESSAGE value="fix import error" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix import error" />
+    <MESSAGE value="add Procfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Procfile" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/EmployeeApplication$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1719225689554" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/EmployeeApplication$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1719231859382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/EmployeeApplication$Flask__run_py_.coverage" NAME="Flask (run.py) Coverage Results" MODIFIED="1719174934990" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

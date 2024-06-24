@@ -58,7 +58,7 @@ def add_employee():
 
 @apiBp.route('/employees/<int:employee_id>', methods=['PUT'])
 @marshal_with(employee_fields)
-def put(employee_id):
+def edit_employee(employee_id):
     args = request.form
     employee = Employee.query.get_or_404(employee_id)
     employee.name = args['name'] if 'name' in args else employee.name
@@ -72,7 +72,7 @@ def put(employee_id):
 
 
 @apiBp.route('/employees/<int:employee_id>', methods=['DELETE'])
-def delete(employee_id):
+def delete_employee(employee_id):
     employee = Employee.query.get_or_404(employee_id)
     if employee.managing_department:
         return 'Cannot delete employee who is a department manager', 422
